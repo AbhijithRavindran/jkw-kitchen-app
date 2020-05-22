@@ -18,7 +18,12 @@ use Illuminate\Support\Facades\Auth;
 Route::get('/', 'HomeController@index');
 Route::get('/menu', 'HomeController@menu');
 Route::get('/cart', 'HomeController@cart');
-
+Route::get('/customer_info', 'HomeController@customer_info');
+Route::post('/order/create', 'OrderController@create');
+Route::get('/payment/checkout/{order_id}', 'PaymentController@checkout');
+Route::post('/payment/confirmPayment', 'PaymentController@confirmPayment');
+Route::get('/payment/success/{order_id}', 'PaymentController@success');
+//Route::post('/payment/checkout', 'OrderController@checkout');
 
 Auth::routes(['register' => false]);
 

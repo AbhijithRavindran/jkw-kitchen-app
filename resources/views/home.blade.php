@@ -124,7 +124,7 @@
 					<div class="text p-4">
 						<h3>{{$item->name}}</h3>
 						<p>{{$item->description}}</p>
-						<p class="price"><span>${{$item->price}}</span> <button class="ml-2 btn btn-white btn-outline-white"  onclick="SaveItem({{$item->id}})">Add to cart <span class="mdi mdi-cart-plus"></span></button></p>
+						<p class="price"><span>${{$item->price}}</span> <button class="ml-2 btn btn-white btn-outline-white"  onclick='SaveItem({{$item->id}},"{{$item->name}}",{{$item->price}})'>Add to cart <span class="mdi mdi-cart-plus"></span></button></p>
 					</div>
 				</div>
 			</div>	

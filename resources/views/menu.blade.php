@@ -20,7 +20,7 @@
 					<div class="text p-4">
 						<h3>{{$item->name}}</h3>
 						<p>{{$item->description}}</p>
-						<p class="price"><span>${{$item->price}}</span> <a href="#" class="ml-2 btn btn-white btn-outline-white">Add to cart <span class="mdi mdi-cart-plus"></span></a></p>
+						<p class="price"><span>${{$item->price}}</span> <button class="ml-2 btn btn-white btn-outline-white"  onclick='SaveItem({{$item->id}},"{{$item->name}}",{{$item->price}})'>Add to cart <span class="mdi mdi-cart-plus"></span></button></p>
 					</div>
 				</div>
 			</div>	
@@ -100,7 +100,8 @@
 						<h3><span>{{$item->name}}</span></h3>
 						<span class="price" style="width:160px !important;">
 							${{$item->price}}
-							<a href="#" class="ml-2 btn btn-white btn-outline-white" style="display: inline;">Add to cart <span class="mdi mdi-cart-plus"></span></a>
+							<button class="ml-2 btn btn-white btn-outline-white" style="display: inline;" onclick='SaveItem({{$item->id}},"{{$item->name}}",{{$item->price}})'>Add to cart <span class="mdi mdi-cart-plus"></span></button>
+							{{-- <a href="#" class="ml-2 btn btn-white btn-outline-white" style="display: inline;">Add to cart <span class="mdi mdi-cart-plus"></span></a> --}}
 						</span>
 					</div>
 					<div class="d-block">

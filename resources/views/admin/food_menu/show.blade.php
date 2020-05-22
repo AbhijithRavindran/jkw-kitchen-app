@@ -3,8 +3,8 @@
 <div class="col-md-6 grid-margin stretch-card">
     <div class="card">
       <div class="card-body">
-        <h4 class="card-title">Add Food Menu</h4>
-        <p class="card-description"> Add new food item here</p>
+        <h4 class="card-title">Update Food Menu</h4>
+        <p class="card-description"> Update new food item here</p>
       <form class="forms-sample" action="/admin/food_menu/update/{{$food_menu_item->id}}" method="POST"  enctype="multipart/form-data">
             @csrf
           <div class="form-group">

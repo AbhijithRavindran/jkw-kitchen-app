@@ -52,4 +52,9 @@ class HomeController extends Controller
     public function cart(){
         return view("cart");
     }
+
+    public function customer_info(){
+        return view("customer_info");
+    }
+
 }
