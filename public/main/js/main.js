@@ -49,7 +49,9 @@
 		$('.home-slider').owlCarousel({
 	    loop:true,
 	    autoplay: true,
-	    margin:0,
+		margin:0,
+		mouseDrag: false,
+		touchDrag: true,
 	    animateOut: 'fadeOut',
 	    animateIn: 'fadeIn',
 	    nav:false,
