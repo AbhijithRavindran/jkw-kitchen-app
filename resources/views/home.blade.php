@@ -16,7 +16,7 @@
 			</p>
 		  </div>
 		  <div class="col-md-6 ftco-animate">
-			  <img src="/main/images/bg_1.png" class="img-fluid" alt="">
+			  <img src="/main/images/bg-circle-new.png" class="img-fluid" alt="">
 		  </div>
 
 		</div>
@@ -60,25 +60,25 @@
 		  <div class="wrap d-md-flex">
 			  <div class="info">
 				  <div class="row no-gutters">
-					  <div class="col-md-4 d-flex ftco-animate">
+					  <div class="col-md-6 d-flex ftco-animate">
 						<a href="tel:5554280940"><div class="icon"><span class="icon-phone"></span></div></a>
 						  <div class="text">
-							  <h3>000 (123) 456 7890</h3>
-							  <p>A small river named Duden flows</p>
+							  <h3>+1 863-529-4808</h3>
+							  <p>Give us a call</p>
 						  </div>
 					  </div>
-					  <div class="col-md-4 d-flex ftco-animate">
+					  {{-- <div class="col-md-4 d-flex ftco-animate">
 						  <div class="icon"><span class="icon-my_location"></span></div>
 						  <div class="text">
 							  <h3>198 West 21th Street</h3>
 							  <p>Suite 721 New York NY 10016</p>
 						  </div>
-					  </div>
-					  <div class="col-md-4 d-flex ftco-animate">
+					  </div> --}}
+					  <div class="col-md-6 d-flex ftco-animate">
 						  <div class="icon"><span class="icon-clock-o"></span></div>
 						  <div class="text">
 							  <h3>Open Monday-Friday</h3>
-							  <p>8:00am - 9:00pm</p>
+							  <p>11:00am - 8:00pm</p>
 						  </div>
 					  </div>
 				  </div>
@@ -95,13 +95,13 @@
   </section>
 
   <section class="ftco-about d-md-flex">
-	  <div class="one-half img" style="background-image: url(main/images/about.jpg);"></div>
+	  <div class="one-half img" style="background-image: url(main/images/home-intro.jpg);"></div>
 	  <div class="one-half ftco-animate">
 	  <div class="heading-section ftco-animate ">
 		<h2 class="mb-4">Welcome to <span style="color: #fac564;">JKW</span> Kitchen</h2>
 	  </div>
 	  <div>
-				<p>On her way she met a copy. The copy warned the Little Blind Text, that where it came from it would have been rewritten a thousand times and everything that was left from its origin would be the word "and" and the Little Blind Text should turn around and return to its own, safe country. But nothing the copy said could convince her and so it didn’t take long until a few insidious Copy Writers ambushed her, made her drunk with Longe and Parole and dragged her into their agency, where they abused her for their.</p>
+				<p>JKWKitchen caters fresh from scratch food Follow on Instagram @JKWKitchen . Contact for more information</p>
 			</div>
 	  </div>
   </section>
@@ -110,8 +110,8 @@
 	<div class="container">
 		<div class="row justify-content-center mb-5 pb-3">
 	  <div class="col-md-7 heading-section ftco-animate text-center">
-		<h2 class="mb-4">Hot Pizza Meals</h2>
-		<p>Far far away, behind the word mountains, far from the countries Vokalia and Consonantia, there live the blind texts.</p>
+		<h2 class="mb-4">Our Special Dishes</h2>
+		<p>Our most special dishes for the day.</p>
 	  </div>
 	</div>
 	</div>

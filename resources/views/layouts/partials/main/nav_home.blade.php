@@ -11,9 +11,9 @@
           </button>
       <div class="collapse navbar-collapse" id="ftco-nav">
         <ul class="navbar-nav ml-auto">
-          <li class="nav-item active"><a href="/" class="nav-link">Home</a></li>
-          <li class="nav-item active"><a href="/menu" class="nav-link">Menu</a></li>
-          <li class="nav-item active">
+          <li class="nav-item "><a href="/" class="nav-link">Home</a></li>
+          <li class="nav-item "><a href="/menu" class="nav-link">Menu</a></li>
+          <li class="nav-item ">
             <a href="/cart" class="nav-link">
               <span><span class="icon icon-shopping_cart"></span> Cart <small>(<span id="cart-count">0</span>)</small> </span>
             </a>
