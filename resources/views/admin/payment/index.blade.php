@@ -31,20 +31,27 @@
                     <th>Payment ID #</th>
                     <th>Order ID #</th>
                     <th>Customer ID #</th>
+                    <th>Customer Name</th>
+                    <th>PayPal Payment ID</th>
                     <th>Amount</th>
                     <th>Received On</th>
                   </tr>
                 </thead>
                 <tbody>
+                  @foreach ($payments as $payment)
                   <tr>
-                    <td>P-61</td>
-                    <td>O-61</td>
-                    <td>C-61</td>
-                    <td>$99</td>
+                    <td>{{$payment->id}}</td>
+                    <td>{{$payment->order_id}}</td>
+                    <td>{{$payment->customer_id}}</td>
+                    <td>{{$payment->customer->name}}</td>
+                    <td>{{$payment->payment_id}}</td>
+                    <td>${{$payment->total_amount}}</td>
                     <td >
-                      11-04-2021
+                      {{$payment->updated_at}}
                     </td>
                   </tr>
+                  @endforeach
+ 
                 </tbody>
               </table>
             </div>

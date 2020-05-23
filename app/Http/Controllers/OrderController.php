@@ -16,11 +16,16 @@ class OrderController extends Controller
         $user = Auth::user();
         if($type == "new" ){
             //need to add order status type column to orders table to store new, ongoing etc.
-            $orders = Order::latest()->get();
+            $orders = Order::where('status','=',true);
+            $orders = $orders->where('process_status','=',"new")->get();
         }else if($type == "ongoing"){
-            $orders = Order::latest()->get();
+            $orders = Order::where('status','=',true);
+            $orders = $orders->where('process_status','=',"ongoing")->get();
+        }else if($type == "completed"){
+            $orders = Order::where('status','=',true);
+            $orders = $orders->where('process_status','=',"completed")->get();
         }else{
-            $orders = Order::latest()->get();
+            $orders = Order::where('status','=',true)->get();
         }
         return view('admin.order.index', compact('user', 'orders', 'type'));
     }

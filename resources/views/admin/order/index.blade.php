@@ -25,6 +25,7 @@
         <div class="row">
           <div class="col-12">
             <div class="table-responsive">
+
               <table id="order-listing" class="table">
                 <thead>
                   <tr class="text-white">
@@ -37,28 +38,40 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
-                    <td>WD-61</td>
-                    <td>Chris Chapel</td>
-                    <td >
-                      +010 8990099234
-                    </td>
-                    <td>$99</td>
-                    <td>
-                      <label class="badge badge-danger">New</label>
-                    </td>
-                    <td class="text-right">
-                      {{-- <button type="button" class="btn btn-info"  data-whatever="@mdo">Open modal for @mdo</button> --}}
-                      <a href="#" class="btn btn-primary btn-small cst-action-lnk">
-                        <i class="mdi mdi-eye "></i>&nbsp;View </a>
-                      <a href="#" class="btn btn-success btn-small cst-action-lnk">
-                        <span class="mdi mdi-food"></span>&nbsp; Accept</a>
-                      <a href="#" class="btn btn-dark btn-small cst-action-lnk">
-                        <i class="mdi mdi-eye "></i>&nbsp;Complete</a>
-                    </td>
-                  </tr>
+                  @foreach ($orders as $order)
+                    <tr>
+                      <td>{{$order->id}}</td>
+                      <td>{{$order->customer->name}}</td>
+                      <td >
+                        {{$order->customer->phone}}
+                      </td>
+                      <td>${{$order->total_amount}}</td>
+                      <td>
+                        @if($order->process_status == "new")
+                          <label class="badge badge-success">{{$order->process_status}}</label>
+                        @elseif($order->process_status == "ongoing")
+                          <label class="badge badge-warning">{{$order->process_status}}</label> 
+                        @else 
+                          <label class="badge badge-primary">{{$order->process_status}}</label>
+                        @endif
+                      </td>
+                      <td class="text-right">
+                        {{-- <button type="button" class="btn btn-info"  data-whatever="@mdo">Open modal for @mdo</button> --}}
+                        <a href="/admin/order/show/{{$order->id}}" class="btn btn-primary btn-small cst-action-lnk">
+                          <i class="mdi mdi-eye "></i>&nbsp;View </a>
+                        @if ($order->process_status == "new")
+                        <a href="/admin/order/accept/{{$order->id}}" class="btn btn-success btn-small cst-action-lnk">
+                          <span class="mdi mdi-food"></span>&nbsp; Accept</a>   
+                        @elseif($order->process_status == "ongoing")
+                        <a href="/admin/order/complete/{{$order->id}}" class="btn btn-dark btn-small cst-action-lnk">
+                          <i class="mdi mdi-eye "></i>&nbsp;Complete</a> 
+                        @endif
+                      </td>
+                    </tr>
+                  @endforeach
                 </tbody>
               </table>
+            
             </div>
           </div>
         </div>

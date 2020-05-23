@@ -29,6 +29,7 @@ Auth::routes(['register' => false]);
 
 Route::group(['middleware' => 'auth'], function () {
     Route::get('/admin', 'AdminController@index');
+    Route::get('/liveOrderData', 'AdminController@liveOrderData');
     Route::get('/logout', 'AdminController@logout');
     //food menu routes
     Route::get('/admin/food_menu/list/{type?}', 'FoodMenuController@index')->name('food_list');

@@ -87,16 +87,18 @@
 				  <ul class="social-icon">
 			{{-- <li class="ftco-animate"><a href="#"><span class="icon-twitter"></span></a></li>
 			<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li> --}}
-			<li class="ftco-animate"><a href="#">Follow us <span class="icon-instagram" style="font-size: 85px;"></span></a></li>
+			<li class="ftco-animate"><a href="https://www.instagram.com/jkwkitchen/" target="_blank"><span class="icon-instagram" style="font-size: 85px;"></span></a></li>
+			<li class="ftco-animate"><a href="https://www.facebook.com/JKWKitchen" target="_blank"><span class="icon-facebook" style="font-size: 85px;"></span></a></li>
+			<li class="ftco-animate"><a href="#" target="_blank"><span class="icon-twitter" style="font-size: 85px;"></span></a></li>
 		  </ul>
 			  </div>
 		  </div>
 	  </div>
   </section>
 
-  <section class="ftco-about d-md-flex">
+  <section class="ftco-about d-md-flex" style="height:500px;">
 	  <div class="one-half img" style="background-image: url(main/images/home-intro.jpg);"></div>
-	  <div class="one-half ftco-animate">
+	  <div class="one-half ftco-animate intro-description">
 	  <div class="heading-section ftco-animate ">
 		<h2 class="mb-4">Welcome to <span style="color: #fac564;">JKW</span> Kitchen</h2>
 	  </div>

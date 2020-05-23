@@ -47,7 +47,7 @@
         </div>
       </form> --}}
       <ul class="navbar-nav ml-auto">
-        <li class="nav-item dropdown">
+        {{-- <li class="nav-item dropdown">
           <a class="nav-link count-indicator" id="messageDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
             <i class="mdi mdi-bell-outline"></i>
             <span class="count">7</span>
@@ -67,7 +67,7 @@
               </div>
             </a>
           </div>
-        </li>
+        </li> --}}
         <li class="nav-item dropdown d-none d-xl-inline-block user-dropdown">
           <a class="nav-link dropdown-toggle" id="UserDropdown" href="#" data-toggle="dropdown" aria-expanded="false">
             <img class="img-xs rounded-circle"  src="/dashboard/assets/images/a.png" alt="Profile image"> </a>

@@ -1,8 +1,8 @@
 <head>
-    <title>Pizzas - Free Bootstrap 4 Template by Colorlib</title>
+    <title>JKW Kitchen</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    
+    <meta name="description" content="Order delicious food online | JKW Kitchen">
     <link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Josefin+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Nothing+You+Could+Do" rel="stylesheet">
@@ -109,6 +109,11 @@ textarea {
   padding-top: 0px !important;
   padding-bottom: 0px !important;
   margin-bottom: 0px !important;
+}
+.intro-description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
       </style>
   </head>

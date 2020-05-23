@@ -35,14 +35,17 @@
                   </tr>
                 </thead>
                 <tbody>
+                  @foreach ($customers as $customer)
                   <tr>
-                    <td>WD-61</td>
-                    <td>Chris Chapel</td>
+                    <td>{{$customer->id}}</td>
+                    <td>{{$customer->name}}</td>
                     <td >
-                      +010 8990099234
+                      {{$customer->phone}}
                     </td>
-                    <td>-------</td>
-                  </tr>
+                    <td>{{$customer->address}} &nbsp; {{$customer->zip}}</td>
+                  </tr>   
+                  @endforeach
+
                 </tbody>
               </table>
             </div>

@@ -6,6 +6,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 use App\Payment;
 use App\Order;
+use App\Notification;
 class PaymentController extends Controller
 {
     public function index(){
@@ -47,6 +48,15 @@ class PaymentController extends Controller
 
     public function success($id){
         $order = Order::find($id);
+        $notification = Notification::where('order_id','=',$order->id)->first();
+        if($notification === null){
+            $notification = new Notification;
+            $notification->viewed = false;
+            $notification->order_id = $order->id;
+            $notification->live_trigger_status = true;
+            $notification->save();
+        }
+
         return view('success', compact('order'));
     }
 }

@@ -54,7 +54,10 @@
               <a class="nav-link" href="/admin/order/list/ongoing">Ongoing Orders</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="/admin/order/list/all">Completed Orders</a>
+              <a class="nav-link" href="/admin/order/list/completed">Completed Orders</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="/admin/order/list/all">All Orders</a>
             </li>
           </ul>
         </div>
