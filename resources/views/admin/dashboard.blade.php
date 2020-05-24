@@ -21,7 +21,7 @@
           <div class="float-right">
             <p class="mb-0 text-right text-white">New Orders</p>
             <div class="fluid-container">
-              <h3 class="font-weight-medium text-right mb-0">0</h3>
+              <h3 class="font-weight-medium text-right mb-0"> {{$order_count['new']}} </h3>
             </div>
           </div>
         </div>
@@ -40,7 +40,7 @@
           <div class="float-right">
             <p class="mb-0 text-right text-white">Ongoing Orders</p>
             <div class="fluid-container">
-              <h3 class="font-weight-medium text-right mb-0">0</h3>
+            <h3 class="font-weight-medium text-right mb-0">{{ $order_count['ongoing'] }}</h3>
             </div>
           </div>
         </div>
@@ -59,7 +59,7 @@
           <div class="float-right">
             <p class="mb-0 text-right text-white">Delivered Orders</p>
             <div class="fluid-container">
-              <h3 class="font-weight-medium text-right mb-0">0</h3>
+            <h3 class="font-weight-medium text-right mb-0">{{ $order_count['completed'] }}</h3>
             </div>
           </div>
         </div>

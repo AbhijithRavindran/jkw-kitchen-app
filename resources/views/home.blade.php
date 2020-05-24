@@ -89,7 +89,7 @@
 			<li class="ftco-animate"><a href="#"><span class="icon-facebook"></span></a></li> --}}
 			<li class="ftco-animate"><a href="https://www.instagram.com/jkwkitchen/" target="_blank"><span class="icon-instagram" style="font-size: 85px;"></span></a></li>
 			<li class="ftco-animate"><a href="https://www.facebook.com/JKWKitchen" target="_blank"><span class="icon-facebook" style="font-size: 85px;"></span></a></li>
-			<li class="ftco-animate"><a href="#" target="_blank"><span class="icon-twitter" style="font-size: 85px;"></span></a></li>
+			<li class="ftco-animate"><a href="https://twitter.com/JKWKitchenLLC" target="_blank"><span class="icon-twitter" style="font-size: 85px;"></span></a></li>
 		  </ul>
 			  </div>
 		  </div>

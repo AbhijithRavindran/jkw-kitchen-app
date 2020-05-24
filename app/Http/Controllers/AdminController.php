@@ -17,7 +17,9 @@ class AdminController extends Controller
         $notifications = Notification::with('order')->whereIn('id', $orders->pluck('id'));
         $notifications->update(['live_trigger_status' => false]);
         $notifications = $notifications->get();
-        return view('admin.dashboard', compact('user', 'orders', 'notifications'));
+        $order_count = $this->getOrderCount($orders);
+
+        return view('admin.dashboard', compact('user', 'orders', 'notifications', 'order_count'));
     }
 
     public function liveOrderData(){
@@ -34,4 +36,21 @@ class AdminController extends Controller
         Auth::logout();
         return redirect()->route('login');
     }
+
+    private function getOrderCount($orders){
+
+        $order_count = array('new'=> 0, 'ongoing'=> 0, 'completed'=>0);
+
+        foreach ($orders as $order) {
+            switch($order->process_status){
+                case 'completed': $order_count['completed']++;break;
+                case 'new': $order_count['new']++;break;
+                case 'ongoing': $order_count['ongoing']++;break;
+            }
+        }
+
+        return $order_count;
+
+    }
+
 }
