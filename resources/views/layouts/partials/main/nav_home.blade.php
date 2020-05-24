@@ -4,7 +4,7 @@
         {{-- <span class="flaticon-pizza-1 mr-1"></span>
         Pizza<br>
         <small>Delicous</small> --}}
-        <img src="\main\images\logo-zoomed-transp.png" height="70px">
+        <img src="\main\images\logo-zoomed-transp.png" height="120px">
       </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#ftco-nav" aria-controls="ftco-nav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="oi oi-menu"></span> Menu
