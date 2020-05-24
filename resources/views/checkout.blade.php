@@ -11,7 +11,7 @@
                     <span><strong>Total</strong></span>
                     <span id="totalAmount"><strong>${{$order->total_amount}}</strong></span>
                 </p>
-                <script src="https://www.paypal.com/sdk/js?client-id=AdjZdFPpmjFmFuSFwE3WxF6Xcc2KIoVWsvnMQ8tqEikIJohBguqwH15dVXDhxMyzC8Vr8ZgUcEVKgvSZ"></script>
+                <script src="https://www.paypal.com/sdk/js?client-id=AW2x1LbEYTFLd7zDszvkRuA97cHMUliKVCj_DJze50Y8MBY-LXtQ24cRvJ1eonDTyyHhIutCqHXegZjI"></script>
                 <hr>
                 <p class="d-flex total-price">
                     <div id="paypal-button-container"></div>
